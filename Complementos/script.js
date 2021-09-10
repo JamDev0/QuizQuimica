@@ -45,6 +45,7 @@ document.onload = ConfigPergunta();
 
 function ConfigPergunta()
 {
+    $('.Opções').unbind();
     $('#Pergunta').text(Perguntas[PerguntaAtual].Pergunta);
     $('.Opções').each(function (In){
         $(this).text(Perguntas[PerguntaAtual].Opções[In]);
